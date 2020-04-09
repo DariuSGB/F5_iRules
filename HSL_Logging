@@ -2,7 +2,7 @@
 # title: HSL_Logging                                                    #
 # author: Dario Garrido                                                 #
 # date: 20200409                                                        #
-# description: iRule for High Speed Logging							              	#
+# description: iRule for High Speed Logging                             #
 #########################################################################
 
 when SERVER_CONNECTED {
