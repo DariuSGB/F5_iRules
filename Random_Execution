@@ -6,8 +6,8 @@
 #########################################################################
 
 when HTTP_REQUEST {
-    if { rand() > 0.1 } {
-        return
-    }
-    log local0. "HTTP_REQUEST EXECUTION (90% OF TIMES)"
+	if { rand() > 0.1 } {
+		return
+	}
+	log local0. "HTTP_REQUEST EXECUTION (90% OF TIMES)"
 }
