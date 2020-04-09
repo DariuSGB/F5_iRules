@@ -29,6 +29,7 @@ when HTTP_REQUEST priority 100 {
 		# Respond user if exists in blacklist
 		if { [table lookup -subtable "blacklist" $source_ip] != "" } {
 			HTTP::respond 200 content "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br><a href='javascript:history.back();'>\[Go Back\]</a></body></html>" noserver Connection close
+			event HTTP_RESPONSE disable
 		}
 	}
 }
