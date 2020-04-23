@@ -2,7 +2,7 @@
 # title: Table_Control.tcl                                               #
 # author: Joe Pruitt                                                     #
 # date: 20200423                                                         #
-# description: iRule for manage subtables                                #
+# description: iRule for managing subtables                              #
 # usage: Access <scheme>://<virtual>/subtables                           #
 # https://devcentral.f5.com/s/articles/session-table-control-with-irules #
 # https://devcentral.f5.com/s/articles/session-table-control             #
