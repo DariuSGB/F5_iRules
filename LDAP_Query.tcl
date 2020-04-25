@@ -15,6 +15,7 @@
 #########################################################################
 
 # REF - https://clouddocs.f5.com/api/irules/Query-LDAP-From-An-iRule-And-Or-Use-APM-With-Non-HTTP-Services.html
+# REF - https://clouddocs.f5.com/api/irules/ACCESS__policy.html
 
 when HTTP_REQUEST {
 	# Enable Clientless-mode
