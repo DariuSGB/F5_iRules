@@ -1,5 +1,5 @@
 #########################################################################
-# title: HSSR-helper.tcl                                                #
+# title: HSSR.tcl                                                       #
 # author: Mark Seecof                                                   #
 # date: 20200425                                                        #
 # description: iRule for executing HTTP SideBand Requests               #
