@@ -2,7 +2,7 @@
 # title: Table_Api.tcl                                                           #
 # author: Dario Garrido                                                          #
 # date: 20200425                                                                 #
-# description: iRule for controlling subtables with API REST                      #
+# description: iRule for managing subtables using API REST                       #
 # usage:                                                                         #
 # |- GET /apitable/table/ - Get all information table                            #
 # |- GET /apitable/table/key/ - Get key value for specified table                #
