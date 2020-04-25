@@ -14,6 +14,8 @@
 # |- SearchFilter: (cn=%{session.ldap.username})                        #
 #########################################################################
 
+# REF - https://clouddocs.f5.com/api/irules/Query-LDAP-From-An-iRule-And-Or-Use-APM-With-Non-HTTP-Services.html
+
 when HTTP_REQUEST {
 	# Enable Clientless-mode
 	HTTP::header insert "clientless-mode" 1
