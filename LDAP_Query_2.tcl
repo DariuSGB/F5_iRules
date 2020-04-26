@@ -18,7 +18,7 @@
 
 when CLIENT_ACCEPTED {
     # Create access policy session
-    set flow_sid [ACCESS::session create -timeout 60 -lifetime 60]
+    set flow_sid [ACCESS::session create -timeout 5 -lifetime 5]
 }
 when HTTP_REQUEST {
     # Get username from URI
