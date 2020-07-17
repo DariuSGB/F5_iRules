@@ -31,11 +31,11 @@ when HTTP_REQUEST {
 	set result3 [regsub -- "\/$" $string ""]
 	log local0. "result3: $result3"  ;# result3: /123/456/678
 	
-	# Replace '/456' by the contain of $replace variable
+	# Replace '/456' by the content of $replace
 	set result4 [regsub -- "/456" $string "$replace"]
 	log local0. "result4: $result4"  ;# result4: /123/abc/678/
 	
-	# Replace '/456' by the contain of $replace variable and switch regex fields (1) and (2)
+	# Replace '/456' by the content of $replace and switch regex fields (1) and (2)
 	set result5 [regsub -- "(.*)/456(.*)/" $string "\\2$replace\\1/"]
 	log local0. "result5: $result5"  ;# result5: /678/abc/123/
 	#####################
