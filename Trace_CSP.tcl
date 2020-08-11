@@ -6,6 +6,6 @@
 #########################################################################
 
 when HTTP_RESPONSE_RELEASE {
-    HTTP::header insert "Content-Security-Policy-Report-Only" [HTTP::header value "Content-Security-Policy"]
-    HTTP::header remove "Content-Security-Policy"
+        HTTP::header insert "Content-Security-Policy-Report-Only" [HTTP::header value "Content-Security-Policy"]
+        HTTP::header remove "Content-Security-Policy"
 }
