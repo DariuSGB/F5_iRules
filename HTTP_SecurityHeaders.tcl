@@ -18,7 +18,7 @@ when HTTP_REQUEST {
 when HTTP_RESPONSE {
 	#HSTS
 	HTTP::header insert Strict-Transport-Security "max-age=$static::max_age; includeSubDomains"
-	#HPKP
+	#HPKP (Deprecated)
 	#HTTP::header insert Public-Key-Pins "pin-sha256=\"$static::fqdn_pin1\"; pin-sha256=\"$static::fqdn_pin2\"; max-age=$static::max_age; includeSubDomains"
 	#Expect-CT
 	HTTP::header insert Expect-CT "enforce, max-age=$static::max_age"
