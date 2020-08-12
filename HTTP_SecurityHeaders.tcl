@@ -8,7 +8,7 @@
 when RULE_INIT {
 	set static::fqdn_pin1 "EhWYeGvikvmcBCXY97kSFqziYxyIHtYd4cTrC3HX/ag="    ;# openssl x509 -pubkey < tls.crt | openssl pkey -pubin -outform der | openssl dgst -sha256 -binary | base64
 	set static::fqdn_pin2 "MHJYVThihUrJcxW6wcqyOISTXIsInsdj3xK8QrZbHec="    ;# openssl req -pubkey < csr.csr | openssl pkey -pubin -outform der | openssl dgst -sha256 -binary | base64
-	set static::max_age 15552000                                            ;# 180 days
+	set static::max_age 604800                                              ;# 7 days
 }
 
 when HTTP_REQUEST {
