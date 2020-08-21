@@ -9,7 +9,7 @@
 
 when RULE_INIT priority 50 {
     # Client IP to log
-	set static::clientIP "10.130.40.42"
+	set static::clientIP "10.1.1.1"
 }
 
 ## REQUEST PRE HTTP PROFILE
