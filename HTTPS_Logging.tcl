@@ -8,17 +8,17 @@
 ## INITIAL VARIABLE DECLARATION
 
 when RULE_INIT priority 50 {
-    # Client IP to log
-	set static::clientIP "10.1.1.1"
+	# Client IP to log
+	set static::clientIP "10.1.1.0/24"
 }
 
 ## REQUEST PRE HTTP PROFILE
 
 when CLIENTSSL_HANDSHAKE priority 50 {
 	set logging 0
-	if { [IP::client_addr] eq $static::clientIP } {
+	if { [IP::addr [IP::client_addr] eq $static::clientIP] } {
 		SSL::collect
-		set LogString "$static::clientIP:[TCP::client_port]"
+		set LogString "[IP::client_addr]:[TCP::client_port]"
 		set logging 1
 	}
 }
