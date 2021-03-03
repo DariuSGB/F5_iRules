@@ -6,6 +6,9 @@
 # https://support.f5.com/csp/article/K16700                             #
 #########################################################################
 
+# Generate Keys:
+# sed -e 's/^.*\(RSA Session-ID\)/\1/;tx;d;:x' /var/log/ltm > /var/tmp/sessionsecrets.pms
+
 when CLIENTSSL_HANDSHAKE {
 	# Decrypt SSL key from a client IP
 	if { [IP::addr [getfield [IP::client_addr] "%" 1] equals 10.1.1.1] } {
