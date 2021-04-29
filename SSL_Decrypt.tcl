@@ -4,6 +4,7 @@
 # date: 20200409                                                        #
 # description: iRule for decrypting SSL keys                            #
 # https://support.f5.com/csp/article/K12783074                          #
+# https://support.f5.com/csp/article/K69625939                          #
 #########################################################################
 
 when CLIENTSSL_HANDSHAKE {
